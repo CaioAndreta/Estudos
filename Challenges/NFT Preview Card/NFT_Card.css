@@ -1,0 +1,46 @@
+/* body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    background: crimson;
+    height: 500px;
+    width: 500px;
+} */
+
+html {
+    background: #fa923f;
+    padding: 10px;
+}
+
+body {
+    background: yellow;
+    padding: 10px;
+    margin: 0;
+}
+
+header {
+    background: #f073e1;
+    /* margin: 10px; */
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+nav {
+    background: #f073e1;
+    margin: 10px;
+}
+footer {
+    background: #f073e1;
+    margin: 10px;
+}
