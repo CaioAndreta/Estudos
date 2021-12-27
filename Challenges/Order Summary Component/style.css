@@ -1,0 +1,118 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--pale-blue);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+}
+
+.card{
+    background-color: white;
+    width: 380px;
+    height: 630px;
+    border-radius: 20px;
+    overflow: clip;
+    box-shadow: 0px 2px 50px rgb(201, 201, 201)
+}
+
+.hero {
+    width: inherit;
+}
+
+.content {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content * {
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    text-align: center;
+    line-height: 200%;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--very-pale-blue);
+    width: 320px;
+    border-radius: 10px;
+}
+
+.plan * {
+    display: inline-block;
+    margin: 10px;
+}
+
+.plan-price * {
+    display: block;
+    padding-right: 10px;
+}
+
+.proceed-order {
+    background-color: var(--bright-blue);
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    width: 320px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px var(--pale-blue);
+}
+
+.cancel-order {
+    background-color: white;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 10px;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+.plan h2 {
+    font-weight: bold;
+}
+
+.plan h3 {
+    color: var(--desaturated-blue);
+}
+
+.plan a {
+    color: var(--bright-blue);
+    font-weight: bold;
+}
