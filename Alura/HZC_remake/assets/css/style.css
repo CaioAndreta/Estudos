@@ -4,10 +4,17 @@ body {
     color: #fff;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     body {
         display: grid;
         grid-template-columns: auto 1fr;
+    }
+
+    .menu--ativo {
+        position: static;
+        width: 15vw;
+        grid-column: 1;
+        grid-row: 1/span 2;
     }
 }
 
@@ -24,6 +31,65 @@ main {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
+.perfil__nome {
+    display: none;
+}
+
+
+.icone--menu, .icone--sino {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+        background-color: #1D232A;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    }
+
+    .perfil__nome {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 12px;
+        font-size: 1.2rem;
+        align-items: center;
+        justify-self: flex-end;
+        color: #95999c;
+        padding: 8px 32px;
+        border-right: 1px solid #95999c;
+    }
+    
+    .perfil__nome::before {
+        content: "";
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/profile_1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50px;
+    }
+    
+    .perfil__nome::after {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 1.5rem;
+        content: "\f078";
+        padding-right: 8px;
+    }
+
+    .icone--menu {
+        display: none;
+    }
+
+    .logo--pequeno {
+        display: none;
+    }
+}
+
+
 
 .menu {
     left: -100vw;
@@ -37,7 +103,6 @@ main {
     background-color: #15191C;
 
     transition: .25s;
-
 }
 
 .menu--ativo {
@@ -45,16 +110,13 @@ main {
     transition: .25s;
 }
 
-
-@media screen and (min-width: 1440px) {
-    @media screen and (min-width: 1440px) {
-        .menu {
-            left: 0;
-            position: static;
-            width: 15vw;
-            grid-column: 1;
-            grid-row: 1/span 2;
-        }
+@media screen and (min-width: 1024px) {
+    .menu {
+        left: 0;
+        position: static;
+        width: 15vw;
+        grid-column: 1;
+        grid-row: 1/span 2;
     }
 }
 
@@ -122,9 +184,6 @@ main {
     background-color: #15191C;
 }
 
-.icone--menu, .icone--sino {
-    font-size: 18px;
-}
 
 .secao {
     padding-bottom: 16px;
