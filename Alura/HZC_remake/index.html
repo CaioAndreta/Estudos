@@ -16,10 +16,10 @@
 </head>
 <body>
     <header class="cabecalho">
-        <i class="fas fa-bars icone--menu"></i>
+        <div class="icone--menu"><i class="fa fa-bars"></i></div>
         <img src="assets/img/logo.svg" alt="" class="logo--pequeno">
         <h4 class="perfil__nome">Bruno Lopes</h4>
-        <i class="fas fa-bell icone--sino"></i>
+        <div class="icone--sino"><i class="fas fa-bell"></i></div>
     </header>
     <nav class="menu">
         <img src="assets/img/logo.svg" alt="" class="logo--grande">
@@ -31,8 +31,8 @@
         <a href="#" class="botao__menu botao__menu--pinturas">Pinturas</a>
     </nav>
     <main class="conteudo">
-        <section class="secao">
-            <h1 class="titulo__secao titulo__secao--primario">Início</h1>
+        <h1 class="titulo__secao titulo__secao--primario titulo--inicio">Início</h1>
+        <section class="secao secao--destaque">
             <article class="cartao cartao__destaque">
                 <img src="assets/img/banner-mobile_1.png" alt="" class="cartao__imagem">
                 <div class="cartao__conteudo cartao__conteudo--destaque">
@@ -45,17 +45,10 @@
                 </div>
             </article>
         </section>
-        <section class="secao">
-            <h1 class="titulo__secao titulo__secao--secundario">Vídeos mais vistos</h1>
-            <article class="cartao">
-                <img src="assets/img/video_1.png" alt="" class="cartao__imagem">
-                <div class="cartao__conteudo cartao__conteudo--video">
-                    <p class="cartao__perfil area-perfil">Bruno Lopes</p>
-                    <h3 class="cartao__titulo area-titulo">HZC - Tudo sem Padrin</h3>
-                    <p class="cartao__info cartao__info--tempo area-tempo">33 minutos</p>
-                    <button class="cartao__botao cartao__botao--video area-botao-video"></button>
-                </div>
-            </article>
+        <section class="secao secao--videos-recentes">
+        </section>
+        <h1 class="titulo__secao titulo__secao--secundario titulo--videos">Vídeos mais vistos</h1>
+        <section class="secao secao--videos">
             <article class="cartao">
                 <img src="assets/img/video_1.png" alt="" class="cartao__imagem">
                 <div class="cartao__conteudo cartao__conteudo--video">
@@ -93,8 +86,8 @@
                 </div>
             </article>
         </section>
-        <section class="secao">
-            <h1 class="titulo__secao titulo__secao--secundario">Camisas mais recentes</h1>
+        <h1 class="titulo__secao titulo__secao--secundario titulo--produtos">Camisas mais recentes</h1>
+        <section class="secao secao--produtos">
                 <article class="cartao">
                     <img src="assets/img/produto_1.png" alt="" class="cartao__imagem">
                     <div class="cartao__conteudo cartao__conteudo--video">
