@@ -1,0 +1,7 @@
+.menu__items {
+    display: flex;
+}
+
+.menu__items:last-child {
+    margin: 0;
+}

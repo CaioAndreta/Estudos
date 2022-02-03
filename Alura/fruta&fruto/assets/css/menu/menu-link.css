@@ -1,0 +1,11 @@
+.menu__link {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: var(--cinza-escuro);
+    margin-right: 1.25rem;
+}
+
+.menu__link--selecionado {
+    color: var(--preto);
+    font-weight: 500;
+}
