@@ -1,10 +1,10 @@
 .receita__botao {
     background-color: var(--vinho);
-    color: var(--branco-fonte);
-    border: none;
     border-radius: 5px;
-    padding: 1rem;
+    border: none;
+    color: var(--branco-fonte);
     cursor: pointer;
+    padding: 1rem;
     transition: all .1s ease-in-out;
 }
 

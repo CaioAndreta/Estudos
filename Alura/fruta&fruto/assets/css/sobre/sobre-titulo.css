@@ -1,5 +1,17 @@
 .sobre__titulo {
     color: var(--vinho);
-    font-family: Pacifico, cursive;
-    font-size: 3.1875rem;
+    font-family: var(--fonte-cursiva);
+}
+
+@media screen and (min-width: 0) {
+    .sobre-titulo {
+        font-size: 2rem;
+
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre-titulo {
+        font-size: 3.1875rem;
+
+    }
 }
