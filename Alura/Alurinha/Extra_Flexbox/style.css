@@ -1,0 +1,26 @@
+.flexContainer:last-child {margin-top: 2em;}
+body{margin: 0; padding: 0;}
+div {height: 50px; width: 50px;}
+div:nth-child(1) {background-color: red; width: 80px; height: 80px;}
+div:nth-child(2) {background-color: blue; width: 80px; height: 80px;}
+div:nth-child(3) {background-color: green; width: 80px; height: 80px;}
+div:nth-child(4) {background-color: yellow; width: 80px; height: 80px;}
+div:nth-child(5) {background-color: pink; width: 80px; height: 80px;}
+div:nth-child(6) {background-color: black; width: 80px; height: 80px;}
+div:nth-child(7) {background-color: orange; width: 80px; height: 80px;}
+div:nth-child(8) {background-color: silver; width: 80px; height: 80px;}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexItem {
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+}
+
+.primeiro {
+    /* flex-grow: 4; */
+    flex-shrink: 0;
+}
