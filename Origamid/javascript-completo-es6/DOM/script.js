@@ -1,0 +1,1 @@
+const primeiroElemento = document.querySelector('.ativo')
