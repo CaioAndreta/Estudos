@@ -28,9 +28,10 @@ backButton.addEventListener('click', () => {
 if (contador > 3) {
     nextButton.setAttribute('disabled', 'disabled');
     backButton.removeAttribute('disabled', 'disabled');
+    console.log(contador)
 }
 
-if (contador < 3) {
-    backButton.setAttribute('disabled', 'disabled');
-    nextButton.setAttribute('disabled', 'disabled');
-}
+// if (contador < 3) {
+//     backButton.setAttribute('disabled', 'disabled');
+//     nextButton.setAttribute('disabled', 'disabled');
+// }
